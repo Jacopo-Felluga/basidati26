@@ -18,7 +18,7 @@
                 <button class="btn btn-primary mb-3">Visualizza Tutti</button>
             </div>
             <div class="col-6">
-                <button class="btn btn-primary mb-3">Aggiungi Iscritto</button>
+                <a href="addSubscriber.php"><button class="btn btn-primary mb-3">Aggiungi Iscritto</button></a>
             </div>
         </div>
         <table class="table table-striped">

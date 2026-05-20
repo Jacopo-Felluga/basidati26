@@ -15,7 +15,7 @@
         <h3>Iscritti</h3>
         <div class="row">
             <div class="col-6">
-                <button class="btn btn-primary mb-3">Visualizza Tutti</button>
+                <a href="subscribersList.php"><button class="btn btn-primary mb-3">Visualizza Tutti</button></a>
             </div>
             <div class="col-6">
                 <a href="addSubscriber.php"><button class="btn btn-primary mb-3">Aggiungi Iscritto</button></a>
@@ -48,10 +48,10 @@
         <h3>Lezioni</h3>
         <div class="row">
             <div class="col-6">
-                <button class="btn btn-primary mb-3">Visualizza Tutti</button>
+                <a href="/lessonsList.php" ><button class="btn btn-primary mb-3">Visualizza Tutti</button></a>
             </div>
             <div class="col-6">
-                <button class="btn btn-primary mb-3">Aggiungi Lezione</button>
+                <a href="" ><button class="btn btn-primary mb-3">Aggiungi Lezione</button></a>
             </div>
         </div>
         <table class="table table-striped">
@@ -81,10 +81,10 @@
         <h3>Corsi</h3>
         <div class="row">
             <div class="col-6">
-                <button class="btn btn-primary mb-3">Visualizza Tutti</button>
+                <a href="/coursesList.php" ><button class="btn btn-primary mb-3">Visualizza Tutti</button></a>
             </div>
             <div class="col-6">
-                <button class="btn btn-primary mb-3">Aggiungi Lezione</button>
+                <a href="" ><button class="btn btn-primary mb-3">Aggiungi Corso</button></a>
             </div>
         </div>
         <table class="table table-striped">

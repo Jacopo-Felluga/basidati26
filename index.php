@@ -51,7 +51,7 @@
                 <a href="/lessonsList.php" ><button class="btn btn-primary mb-3">Visualizza Tutti</button></a>
             </div>
             <div class="col-6">
-                <a href="" ><button class="btn btn-primary mb-3">Aggiungi Lezione</button></a>
+                <a href="/addLesson.php" ><button class="btn btn-primary mb-3">Aggiungi Lezione</button></a>
             </div>
         </div>
         <table class="table table-striped">

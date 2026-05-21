@@ -10,7 +10,7 @@ try {
         $ora_fine = $_POST['OraFine'];
         $sql = "INSERT INTO Lezioni (IdCorso, Data, OraInizio, OraFine) VALUES (?, ?, ?, ?);";
 
-        // query con prepared statement come studiato per evitare SQL injection
+        // query con prepared statement solo sui putni in cui vengono inseriti valori direttamente dall'utente, come studiato per evitare SQL injection
         $stmt = mysqli_prepare($conn, $sql);
         
         if ($stmt) {

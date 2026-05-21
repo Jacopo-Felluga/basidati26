@@ -70,8 +70,10 @@
             if($resultCheck > 0){
                 while($row = mysqli_fetch_assoc($result)){
                     $datePieces = explode("-", $row['Data']);
+                    $startHourPieces = explode(":", $row['OraInizio']);
+                    $endHourPieces = explode(":", $row['OraFine']);
                     $convertedDate = $datePieces[2]."/".$datePieces[1]."/".$datePieces[0];
-                    echo "<tr><td>" . $row['NomeCorso'] . "</td><td>" . $convertedDate . "</td><td>" . $row['OraInizio'] . "</td><td>" . $row['OraFine'] . "</td><td>" . $row['NomeSala'] . "</td></tr>";
+                    echo "<tr><td>" . $row['NomeCorso'] . "</td><td>" . $convertedDate . "</td><td>" . $startHourPieces[0] . ":" . $startHourPieces[1] . "</td><td>" . $endHourPieces[0] . ":" . $endHourPieces[1] . "</td><td>" . $row['NomeSala'] . "</td></tr>";
                 }
             }
         ?>

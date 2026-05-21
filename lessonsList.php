@@ -22,7 +22,6 @@
                 <a href="/"><button class="btn btn-primary mb-3">Torna indietro</button></a>
             </div>
         </div>
-        </div>
         <table class="table table-striped">
             <tr>
                 <th>Nome Corso</th>

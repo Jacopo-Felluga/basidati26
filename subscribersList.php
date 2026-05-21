@@ -24,6 +24,7 @@
         </div>
         <table class="table table-striped">
             <tr>
+                <th>CF</th>
                 <th>Nome</th>
                 <th>Cognome</th>
                 <th>Telefono</th>
@@ -32,14 +33,14 @@
                 <th>N. Iscrizioni</th>
             </tr>
         <?php
-            $sql = "SELECT * FROM iscritti";
+            $sql = "SELECT * FROM iscritti ORDER BY CF";
             $result = mysqli_query($conn, $sql);
             $resultCheck = mysqli_num_rows($result);
             if($resultCheck > 0){
                 while($row = mysqli_fetch_assoc($result)){
                     $datePieces = explode("-", $row['DataDiNascita']);
                     $convertedDate = $datePieces[2]."/".$datePieces[1]."/".$datePieces[0];
-                    echo "<tr><td>" . $row['Nome'] . "</td><td>" . $row['Cognome'] . "</td><td>" . $row['Telefono'] . "</td><td>" . $row['Email'] . "</td><td>" . $convertedDate . "</td><td>" . $row['NumeroIscrizioni'] . "</td></tr>";
+                    echo "<tr><td>" . $row['CF'] . "</td><td>" . $row['Nome'] . "</td><td>" . $row['Cognome'] . "</td><td>" . $row['Telefono'] . "</td><td>" . $row['Email'] . "</td><td>" . $convertedDate . "</td><td>" . $row['NumeroIscrizioni'] . "</td></tr>";
                 }
             }
         ?>

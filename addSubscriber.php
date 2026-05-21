@@ -31,7 +31,7 @@
             </div>
             <div class="mb-3">
                 <label for="cognome" class="form-label">Cognome</label>
-                <input type="text" class="form-control" id="cognome" name="Cognome " required>
+                <input type="text" class="form-control" id="cognome" name="Cognome" required>
             </div>
             <div class="mb-3">
                 <label for="telefono" class="form-label">Telefono</label>

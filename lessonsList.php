@@ -15,7 +15,13 @@
 
         <h1>Lezioni</h1>
         <div class="row">
-            <a href="/" ><button class="btn btn-primary mb-3">Torna indietro</button></a>
+            <div class="col-6">
+                <a href="/addLesson.php"><button class="btn btn-primary mb-3">Aggiungi Lezione</button></a>
+            </div>    
+        <div class="col-6">
+                <a href="/"><button class="btn btn-primary mb-3">Torna indietro</button></a>
+            </div>
+        </div>
         </div>
         <table class="table table-striped">
             <tr>
